@@ -1,5 +1,7 @@
 <template>
-
+    <div id='page-wrp'>
+        
+    </div>
 </template>
 
 <script>

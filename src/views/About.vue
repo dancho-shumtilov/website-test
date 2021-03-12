@@ -1,15 +1,5 @@
 <template>
-    <h1>Hello, my name is Dancho Petrov</h1>
-    <p>I'm the front end developer</p>
+  <div class="about">
+    <h1>This is an about page</h1>
+  </div>
 </template>
-
-<script>
-export default {
-  name: 'About',
-  props: {
-  }
-}
-</script>
-
-<style scoped>
-</style>
