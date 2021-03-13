@@ -1,6 +1,6 @@
 <template>
     <div id='page-wrp'>
-        
+        <p>This is a CV page</p>
     </div>
 </template>
 

@@ -1,30 +1,58 @@
 <template>
-  <div id="nav">
-    <router-link to="/"><img src="./assets/logo.png" ></router-link> |
-    <router-link to="/about">About</router-link>
+  <Header />
+  <div id='main-content'>
+    <router-view/>
   </div>
-  <router-view/>
+  <Footer />
 </template>
 
+<script>
+import Header from './components/Header.vue'
+import Footer from './components/Footer'
+
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
+
 <style>
+@import '/path/to/reset-css/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 100%;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #181818;
 }
 
-#nav {
-  padding: 30px;
+#main-content {
+  flex: 1 0 auto;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.footer {
+  flex-shrink: 0;
 }
 </style>
