@@ -25,9 +25,28 @@ export default {
 @import '/path/to/reset-css/reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./assets/fonts/icomoon/icomoon.eot?2aihqq');
+  src:  url('./assets/fonts/icomoon/icomoon.eot?2aihqq#iefix') format('embedded-opentype'),
+    url('./assets/fonts/icomoon/icomoon.ttf?2aihqq') format('truetype'),
+    url('./assets/fonts/icomoon/icomoon.woff?2aihqq') format('woff'),
+    url('./assets/fonts/icomoon/icomoon.svg?2aihqq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 html, body {
   height: 100%;
   margin: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #app {
@@ -54,5 +73,44 @@ html, body {
 
 .footer {
   flex-shrink: 0;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 744px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 964px;
+  }
+}
+
+@media (min-width: 1224px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1620px) {
+  .container {
+    width: 1596px;
+  }
 }
 </style>
