@@ -3,14 +3,14 @@
     <div class="container">
       <div class="hd-flex">
         <h1>
-          <router-link to="/"><img src='../assets/logo.svg' alt="my logo"/></router-link>
+          <router-link to="/" id='logo'><img src='../assets/logo.svg' alt="my logo"/></router-link>
         </h1>
 
-        <div class="hd-nav">
+        <nav class="hd-nav">
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
           <router-link to ="/CV">CV</router-link>
-        </div>
+        </nav>
       </div>
     </div>
   </header>

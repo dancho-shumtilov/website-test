@@ -22,7 +22,6 @@ export default {
 
 
 <style>
-@import '/path/to/reset-css/reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 @font-face {
@@ -58,6 +57,8 @@ html, body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   font-size: 1.125rem;
   font-weight: 400;
   font-family: 'Inter', Arial, sans-serif;
@@ -68,6 +69,7 @@ html, body {
 }
 
 #main-content {
+  position: relative;
   flex: 1 0 auto;
 }
 

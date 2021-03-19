@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import CV from '../views/CV.vue'
+import PageNotFound from '../views/PageNotFound'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/cv',
     name: 'CV',
     component: CV
+  },
+  { 
+    path: "/:catchAll(.*)",
+    name: 'bad-not-found',
+    component: PageNotFound
   },
 ]
 
