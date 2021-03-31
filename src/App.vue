@@ -1,8 +1,8 @@
 <template>
   <Header />
-  <div id='main-content'>
-    <router-view/>
-  </div>
+  <main id='main-content'>
+    <router-view/> 
+  </main>
   <Footer />
 </template>
 
@@ -19,7 +19,6 @@ export default {
   }
 }
 </script>
-
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
@@ -59,13 +58,14 @@ html, body {
   min-height: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  color: #181818;
   font-size: 1.125rem;
   font-weight: 400;
   font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.25em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #181818;
 }
 
 #main-content {
@@ -88,8 +88,54 @@ html, body {
   position: absolute;
 }
 
-@media (min-width: 576px) {
+p strong {
+  font-weight: 900;
+}
 
+@keyframes dash {
+  to {stroke-dashoffset: 0;}
+}
+
+@-webkit-keyframes dash {
+  to {stroke-dashoffset: 0;}
+}
+
+@-moz-keyframes dash {
+  to {stroke-dashoffset: 0;}
+}
+
+@-o-keyframes dash {
+  to {stroke-dashoffset: 0;}
+}
+
+@keyframes blink {
+  from, to {color: transparent;}
+  50% {color: #fff;}
+}
+
+@-webkit-keyframes blink {
+  from, to {color: transparent;}
+  50% {color: #fff;}
+}
+
+@-moz-keyframes blink {
+  from, to {color: transparent;}
+  50% {color: #fff;}
+}
+
+@-o-keyframes blink {
+  from, to {color: transparent;}
+  50% {color: #fff;}
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #eb7f00; }
 }
 
 @media (min-width: 768px) {

@@ -21,7 +21,8 @@ export default {
 
 <style scoped>
   footer {
-    padding: 1.25rem 0.75rem 0.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #edf8fa;
   }
 
@@ -32,17 +33,13 @@ export default {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
-  
-.webmaster {
-  margin-bottom: 1.25rem;
-}
-
+ 
 .social a {
   position: relative;
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  margin: 0 0.75rem 1.25rem;
+  margin: 0 0.75rem;
   vertical-align: middle;
   color: transparent;
   font-size: 0.1px;
