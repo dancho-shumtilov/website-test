@@ -9,9 +9,9 @@
         <nav class="hd-nav">
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
-          <!-- <router-link to ="/CV">CV</router-link> -->
+          <router-link to ="/CV">CV</router-link>
           <router-link to ="/fake-store">Fake Store</router-link>
-          <!-- <router-link to="/api-test">Api Test</router-link> -->
+          <router-link to="/api-test">Api Test</router-link>
         </nav>
       </div>
     </div>

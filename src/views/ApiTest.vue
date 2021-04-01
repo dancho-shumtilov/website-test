@@ -51,22 +51,22 @@ export default {
 
             /* Photo request/response with headers */
         async getPhoto() {
-            // const headers = new Headers;
-            // headers.append(
-            //     "Authorization",
-            //     "api_key"
-            // )
-            // const request = new Request (
-            //     "https://api.pexels.com/v1/curated?per_page=11&page=1",
-            //     {
-            //     method: "GET",
-            //     // headers,
-            //     mode: "cors",
-            //     cache: "default"
-            //     }
-            // );
-
-            const request = await fetch('https://api.pexels.com/v1')
+            const headers = new Headers;
+            headers.append(
+                "Authorization",
+                "563492ad6f91700001000001a54f378ed2514bf2a7bb7d596df54d44"
+            )
+            const request = new Request (
+                "https://api.pexels.com/v1/curated?per_page=11&page=1",
+                {
+                method: "GET",
+                headers,
+                mode: "cors",
+                cache: "default"
+                }
+            );
+            console.log(request);
+            // const request = await fetch('https://api.pexels.com/v1')
             const res1 = await request;
             const {photos} = await res1.json;
             this.data = photos[0];
